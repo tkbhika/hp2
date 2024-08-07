@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+.sub-top {
+  background-image: url(../img/office03.jpg);
+}
+
+.breadcrumb i {
+  color: #F3FAFF;
+}
+
+.breadcrumb a {
+  color: #F3FAFF;
+}
+
+/* サブイントロ */
+.sub-intro-wrap__con::after {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 120%;
+}
+
+/* 事例紹介 */
+.cases-wrap__con {
+  margin-bottom: clamp(3.125rem, 2.232rem + 4.46vw, 6.25rem);
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.cases-wrap__con__item {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cases-wrap__con__item:first-child {
+  margin-top: 0;
+}
+
+
+.cases-wrap__con__item__inner {
+  padding: 1rem;
+}
+
+.cases-wrap__con__item__top__img {
+  margin-top: 100px;
+  position: relative;
+}
+
+.cases-wrap__con__item__top__img img {
+  aspect-ratio: 3/2;
+  width: 100%;
+}
+
+.cases-wrap__con__item__top__img__number {
+  position: absolute;
+  top: -150px;
+  left: 30%;
+  z-index: -1;
+}
+
+.cases-wrap__con__item__top__img__number h5 {
+  font-size: 3rem;
+  border: solid #D7DFE4 1px;
+  width: 185px;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cases-wrap__con__item__top__img__number::after {
+  content: '';
+  position: absolute;
+  border: solid #D7DFE4 1px;
+  width: 145px;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  top: -15%;
+  left: -45%;
+  z-index: -1;
+}
+
+
+
+.cases-wrap__con__item__tx {
+}
+
+.cases-wrap__con__item__tx__tag {
+  border: solid #192252 1px;
+  display: inline-block;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+}
+
+.cases-wrap__con__item__tx__tag p {
+  font-size: 12px;
+}
+
+.cases-wrap__con__item__tx__ttl {
+  margin-top: 0.5rem;
+}
+
+.cases-wrap__con__item__tx__p p{
+  line-height: 1.5;
+}
+
+
+
+/* レスポンシブ */
+
+
+  
+
+
+@media screen and (min-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: inline-block;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+  .__inner {
+    width: 81%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: inline-block;
+  }
+
+  .__inner {
+    width: 90%;
+  }
+
+  .cases-wrap__con {
+    grid-template-columns:  repeat(auto-fit, minmax(280px, 1fr));
+  }
+}

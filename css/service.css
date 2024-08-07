@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+.sub-top {
+  background-image: url(../img/work01.jpg);
+}
+
+.breadcrumb i {
+  color: #192252;
+}
+
+.breadcrumb a {
+  color: #192252;
+}
+
+/* サブイントロ */
+.sub-intro-wrap__con::after {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 120%;
+}
+
+
+/* サービス内容１ */
+.ser01 {
+  background-image: url(../img/office04.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.ser01::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(25, 34, 82, 0.8);
+}
+
+.ser01-wrap {
+  position: relative;
+  z-index: 1;
+  color: #F3FAFF;
+  text-align: center;
+}
+
+.ttl04 {
+  margin-bottom: 100px;
+}
+
+.ttl04 h5 {
+  font-size: clamp(3rem, 2.143rem + 4.29vw, 6rem);
+  margin-bottom: clamp(-1rem, -0.643rem + -1.79vw, -2.25rem);
+}
+
+.ttl04 h2 {
+  font-size: clamp(1.25rem, 1.036rem + 1.07vw, 2rem);
+}
+
+.ttl04 span {
+  font-family: "futura-pt",sans-serif;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+}
+
+
+.ser01-wrap__con__box01 h4 {
+  margin-bottom: 50px;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+}
+
+.ser01-wrap__con__box01__figure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
+  max-width: 1000px;
+  margin: auto;
+  gap: 20px;
+}
+
+.-figure__item {
+  aspect-ratio: 1/1;
+  min-width: 80px;
+  border: solid #F3FAFF 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.-figure__item p {
+  font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+  font-family:"futura-pt",sans-serif;
+  line-height: 1.25;
+}
+
+.plan-checked {
+  background-color: #8ACD1D;
+  border: solid #8ACD1D 1px;
+}
+
+.triangle {
+  margin: 50px auto;
+  width: 50px;
+  aspect-ratio: 5/4;
+  background-color: #F3FAFF;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.ser01-wrap__con__box02__ttl {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.ser01-wrap__con__box02__ttl h5 {
+  font-size: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+}
+
+.ser01-wrap__con__box02__ttl h3 {
+  margin-left: 1rem;
+  font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+}
+
+.ser01-wrap__con__box02__figure {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: auto;
+  width: fit-content;
+}
+
+/* サービス内容２ */
+.ser02 {
+  background-image: url(../img/office03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ser02::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(243, 250, 255, 0.8);
+}
+
+.ser02-wrap {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.ser02-wrap__con h4 {
+  margin-bottom: 50px;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+}
+
+
+
+.ser02-wrap__con__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ser02-wrap__con__box__img {
+  width: 30%;
+  position: relative;
+}
+
+.ser02-wrap__con__box__img img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.ser02-wrap__con__img-tag {
+  position: absolute;
+  left: -1rem;
+  top: 1rem;
+  background-color: #8ACD1D;
+  padding: 1% 5%;
+  color: #F3FAFF;
+}
+
+.ser02-wrap__con__img-tag h3 {
+  font-size: clamp(0.875rem, 0.159rem + 1.49vw, 1.5rem);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+  /* サブイントロ */
+  .sub-intro-wrap__con::after {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    transform: translateY(0);
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: inline-block;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+  .__inner {
+    width: 81%;
+  }
+
+
+  .ser01-wrap__con__box01__figure {
+    grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
+    gap: 10px;
+  }
+
+  .-figure__item {
+    min-width: 60px;
+  }
+
+  .ser02-wrap__con__box {
+    display: block;
+  }
+
+  .ser02-wrap__con__box__img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .ser02-wrap__con__box__img img {
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+
+  .ser02-wrap__con__img-tag {
+    position: absolute;
+    left: -1rem;
+    top: 1rem;
+    padding: 1% 5%;
+  }
+
+  .ser02-wrap__con__img-tag h3 {
+    font-size: clamp(0.875rem, 0.429rem + 2.23vw, 1.5rem);
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: inline-block;
+  }
+
+  .__inner {
+    width: 90%;
+  }
+
+  .ser01-wrap__con__box01__figure {
+    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+    gap: 10px;
+  }
+
+  .-figure__item {
+    min-width: 50px;
+  }
+
+}

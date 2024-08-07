@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+.sub-top {
+  background-image: url(../img/office04.jpg);
+}
+
+.sub-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(25, 34, 82, 0.2);
+}
+
+.breadcrumb i {
+  color: #F3FAFF;
+}
+
+.breadcrumb a {
+  color: #F3FAFF;
+}
+
+/* 記事一覧 */
+.art-wrap__con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+
+.art-wrap__con__box:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.3s all;
+}
+
+.art-wrap__con__box__img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.art-wrap__con__box__img img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+
+.art-wrap__con__box__tag {
+  display: flex;
+}
+
+.art-wrap__con__box__tag__cate {
+  background-color: #8ACD1D;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2%;
+}
+
+.art-wrap__con__box__tag__cate h4 {
+  font-size: 12px;
+  color: #F3FAFF;
+  line-height: 1.5rem;
+}
+
+.art-wrap__con__box__tag__date p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.art-wrap__con__box__ttl h4 {
+  font-size: 1rem;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: inline-block;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+  .__inner {
+    width: 81%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: inline-block;
+  }
+
+  .__inner {
+    width: 90%;
+  }
+
+}

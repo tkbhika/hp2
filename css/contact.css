@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+.sub-top {
+  background-image: url(../img/job01.jpg);
+}
+
+.sub-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(25, 34, 82, 0.2);
+}
+
+.breadcrumb i {
+  color: #F3FAFF;
+}
+
+.breadcrumb a {
+  color: #F3FAFF;
+}
+
+/* フォーム */
+.form-wrap {
+  max-width: 800px;
+}
+
+.form-wrap__caution h4{
+  text-align: center;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+}
+
+.form-wrap__tel {
+  background-color: #192252;
+  color: #F3FAFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  margin: clamp(1.875rem, 0.982rem + 4.46vw, 5rem) 0;
+}
+
+.form-wrap__tel h3 {
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1.5rem);
+}
+
+.form-wrap__tel__ttl {
+  margin-right: 4rem;
+}
+
+.form-wrap__tel__info h3 {
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+}
+
+.form-wrap__tel__info p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.form-wrap__con__box {
+  margin-top: 3%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.form-wrap__con__box__ttl {
+  width: 35%;
+}
+
+.form-wrap__con__box__ttl span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #F3FAFF;
+  margin-left: 1rem;
+  background-color: #192252;
+  display: inline-block;
+  padding: 0 1%;
+}
+
+
+.form-wrap__con__box__select {
+  width: 65%;
+  display: inline-block;
+  height: 3rem;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.form-wrap__con__box__input {
+  width: 65%;
+  height: 3rem;
+  padding: 0 2%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.form-wrap__con__box__text {
+  width: 65%;
+  height: 300px;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.form-wrap__con__btn {
+  margin-top: clamp(1.875rem, 0.982rem + 4.46vw, 5rem);
+  text-align: center;
+}
+
+.form-wrap__con__btn__item {
+  border: none;
+}
+
+.form-wrap__con__btn__item__tx {
+  
+}
+
+.form-wrap__con__btn:hover {
+  cursor: pointer;
+}
+
+.form-wrap__con__btn i {
+  margin-left: 1rem;
+}
+
+input {
+  border: none;
+}
+
+select {
+  border: none;
+}
+
+textarea {
+  border: none;
+}
+
+
+
+
+
+
+
+/* レスポンシブ */
+@media screen and (min-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .__pc {
+    display: inline-block;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: inline-block;
+  }
+
+  .__sp {
+    display: none;
+  }
+
+  .__inner {
+    width: 81%;
+  }
+
+
+  /* フォーム */
+  .form-wrap__tel {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .form-wrap__tel__ttl {
+    margin-right: 0;
+  }
+
+  .form-wrap__con__box {
+    display: block;
+  }
+
+  .form-wrap__con__box__select, .form-wrap__con__box__input, .form-wrap__con__box__text {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .__pc {
+    display: none;
+  }
+
+  .__tab {
+    display: none;
+  }
+
+  .__sp {
+    display: inline-block;
+  }
+
+  .__inner {
+    width: 90%;
+  }
+
+  .sub-top {
+    height: 250px;
+  }
+
+  .sub-box {
+    padding-top: 60px;
+    height: 190px;
+  }
+
+  .sub-box__con {
+    height: 85px;
+  }
+
+  .sub-box__con__ttl h5 {
+    line-height: 85px;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- 文字コード -->
+  <meta charset="UTF-8">
+
+  <title>株式会社Archi</title>
+  <meta name="description" content="株式会社アーチは多様な情報をデジタルアーカイブとして構築・管理し、その価値を守ります。">
+  <meta name="keywords" content="">
+
+  <!-- 表示領域の指定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- OGP -->
+  <meta property="og:url" content="https://withcode-plus.tech">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="株式会社Archi">
+  <meta property="og:description" content="株式会社アーチは多様な情報をデジタルアーカイブとして構築・管理し、その価値を守ります。">
+  <meta property="og:site_name" content="WithCode">
+  <meta property="og:image" content="https://withcode-plus.tech/img/logo.png">
+
+  <!-- アイコンの読み込み -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png">
+
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/common01.css">
+  <link rel="stylesheet" type="text/css" href="../css/common02.css">
+  <link rel="stylesheet" type="text/css" href="../css/contact.css">
+
+
+  <!-- フォントの読み込み -->
+  <link rel="stylesheet" href="https://use.typekit.net/llh3gkt.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <div class="header-wrap">
+      <a href="../index.html" class="header-wrap__img">
+        <img src="../img/logo.png" alt="ロゴ画像">
+      </a>
+      <nav class="header-wrap__nav">
+        <ul class="header-wrap__nav__list">
+          <li class="header-wrap__nav__list__item">
+            <a href="about.html">Archiについて</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="service.html">事業内容</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="cases.html">事例紹介</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="news.html">お知らせ</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="company.html">会社概要</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="h-open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="h-nav">
+        <div id="h-nav__list">
+          <ul>
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="about.html">Archiについて</a></li>
+            <li><a href="service.html">事業内容</a></li>
+            <li><a href="cases.html">事例紹介</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <main>
+    <section class="sub-top" id="sub-top">
+      <div class="sub-box">
+        <div class="sub-box__con">
+          <div class="sub-box__con__ttl">
+            <h5>Contact<span>お問い合わせ</span></h5>
+            <div class="breadcrumb">
+              <a href="../index.html">ホーム</a>
+              <i class="fa-solid fa-play"></i>
+              <a href="contact.html">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="form">
+      <div class="form-wrap __intro __inner">
+        <div class="form-wrap__caution">
+          <h4>
+            <span>
+              <span>下記のフォームより</span><span>必須事項をご記入して送信してください。</span>
+            </span>
+            <span>
+              <span>営業日以内に担当者より</span><span>折り返しご連絡させていただきます。</span>
+            </span>
+            <span>
+              <span>お急ぎの場合はお電話で</span><span>お問い合わせください。</span>
+            </span>
+          </h4>
+        </div>
+        <a href="tel:00000000000">
+          <div class="form-wrap__tel">
+            <h3 class="form-wrap__tel__ttl">お電話でのお問い合わせ</h3>
+            <div class="form-wrap__tel__info">
+              <h3>000-0000-0000</h3>
+              <p>対応時間：平日 11:00~17:00</p>
+            </div>
+          </div>
+        </a>
+
+        <form action="../mail.php" id="form" method="POST"  class="form__wrap__con">
+          <div class="form-wrap__con__box">
+            <label class="form-wrap__con__box__ttl" for="category">
+              <h4>お問い合わせ種別<span>必須</span></h4>
+            </label>
+            <select class="form-wrap__con__box__select" id="category" name="category" required>
+              <option selected>お問い合わせ内容を選択</option>
+              <option>アーカイブの見積もり</option>
+              <option>その他</option>
+            </select>
+          </div>
+
+          <div class="form-wrap__con__box">
+            <label class="form-wrap__con__box__ttl" for="company">
+              <h4>会社名</h4>
+            </label>
+            <input class="form-wrap__con__box__input" type="text" id="company" name="company" placeholder="会社名をご記入ください" required>
+            </input>
+          </div>
+
+
+          <div class="form-wrap__con__box">
+            <label class="form-wrap__con__box__ttl" for="name">
+              <h4>お名前<span>必須</span></h4>
+            </label>
+            <input class="form-wrap__con__box__input" type="text" id="name" name="name" placeholder="お名前をご記入ください" required>
+          </div>
+
+          <div class="form-wrap__con__box">
+            <label class="form-wrap__con__box__ttl" for="tel">
+              <h4>電話番号<span>必須</span></h4>
+            </label>
+            <input class="form-wrap__con__box__input" type="tel" id="tel" name="tel" placeholder="お電話番号を記入してください" required>
+          </div>
+
+          <div class="form-wrap__con__box">
+            <label class="form-wrap__con__box__ttl" for="email">
+              <h4>メールアドレス<span>必須</span></h4>
+            </label>
+            <input class="form-wrap__con__box__input" type="email" id="email" name="Email" placeholder="例）example@example.com" required>
+          </div>
+
+          <div class="form-wrap__con__box">
+            <label class="form-wrap__con__box__ttl" for="message">
+              <h4>お問い合わせ内容<span>必須</span></h4>
+            </label>
+            <textarea class="form-wrap__con__box__text" id="message" name="message" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+          </div>
+
+          <div type="submit" class="form-wrap__con__btn">
+            <button type="submit"  class="form-wrap__con__btn__item btn">
+              <div class="form-wrap__con__btn__item__tx btn-tx">
+                <h4>確認画面へ進む<i class="fa-solid fa-play"></i></h4>
+              </div>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+  <!-- フッター -->
+  <footer>
+    <section class="footer" id="footer">
+      <div class="footer-wrap __inner">
+        <div class="footer-wrap__top">
+          <div class="footer-wrap__top__name">
+            <img src="../img/logo-light.png">
+            <h4>株式会社Archi</h4>
+          </div>
+          <div class="footer-wrap__top__sns">
+            <a href="">
+              <img src="../img/facebook-ico.png">
+            </a>
+            <a href="">
+              <img src="../img/instagram-ico.png">
+            </a>
+            <a href="">
+              <img src="../img/twitter-ico.png">
+            </a>
+          </div>
+        </div>
+        <nav class="footer-wrap__nav">
+          <ul class="footer-wrap__nav__list">
+            <li class="footer-wrap__nav__list__item">
+              <a href="../index.html">ホーム</a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="../html/about.html">Archについて</a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="../html/service.html">事業内容</a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="../html/cases.html">事例紹介</a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="../html/news.html">お知らせ</a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="../html/company.html">会社概要</a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="../html/contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+  
+          <ul class="footer-wrap__nav__list__tab">
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../index.html">ホーム</a>
+            </li>
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../html/about.html">Archについて</a>
+            </li>
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../html/service.html">事業内容</a>
+            </li>
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../html/cases.html">事例紹介</a>
+            </li>
+          </ul>
+          <ul class="footer-wrap__nav__list__tab">
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../html/news.html">お知らせ</a>
+            </li>
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../html/company.html">会社概要</a>
+            </li>
+            <li class="footer-wrap__nav__list__tab__item">
+              <a href="../html/contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+  
+          <ul class="footer-wrap__nav__list__sp">
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../index.html">ホーム</a>
+            </li>
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../html/about.html">Archについて</a>
+            </li>
+          </ul>
+          <ul class="footer-wrap__nav__list__sp">
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../html/service.html">事業内容</a>
+            </li>
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../html/cases.html">事例紹介</a>
+            </li>
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../html/news.html">お知らせ</a>
+            </li>
+          </ul>
+          <ul class="footer-wrap__nav__list__sp">
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../html/company.html">会社概要</a>
+            </li>
+            <li class="footer-wrap__nav__list__sp__item">
+              <a href="../html/contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="footer-wrap__btm__sns">
+          <a href="">
+            <img src="../img/facebook-ico.png">
+          </a>
+          <a href="">
+            <img src="../img/instagram-ico.png">
+          </a>
+          <a href="">
+            <img src="../img/twitter-ico.png">
+          </a>
+        </div>
+  
+  
+        <div class="footer-wrap__copy">
+          <small>© 2024 Archi All Rights Reserved.</small>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- JS&JQのプラグイン -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/common.jss></script>
+</body>
+
+</html>
