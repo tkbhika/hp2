@@ -80,13 +80,18 @@
 }
 
 .able-wrap__con__box ol {
-  margin: 3rem;
+  margin: 2rem 1.5rem 2rem 2.5rem;
 }
 
 .able-wrap__con__box li {
   font-weight: 500;
   font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.5rem);
-  line-height: 3;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.able-wrap__con__box li:last-child {
+  margin-bottom: 0;
 }
 
 /* 強み */
@@ -213,7 +218,6 @@
 
   .able-wrap__con {
     position: relative;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -334,7 +338,6 @@
   }
 
   .able-wrap__con__box {
-    position: absolute;
     box-shadow: 10px 10px 0 0 #D7DFE4;
   }
 

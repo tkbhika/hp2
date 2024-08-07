@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 16px;
   background-color: #F3FAFF;
@@ -166,6 +171,8 @@ header {
   width: 100%;
   height: 100px;
   z-index: 10;
+  box-sizing: border-box;
+  max-width: 100vw
 }
 
 .header-wrap {
@@ -426,9 +433,9 @@ header {
   font-size: 3rem;
 }
 
-  .about-wrap__tx h4 {
-    font-weight: 300;
-  }
+.about-wrap__tx h4 {
+  font-weight: 300;
+}
 
 .about-wrap__btn {
   margin-top: 50px;
@@ -499,6 +506,10 @@ header {
   width: 65%;
   display: flex;
   justify-content: space-between;
+}
+
+.ser-wrap__con h4 {
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
 }
 
 .ser-wrap__con__item01,.ser-wrap__con__item02 {
@@ -598,6 +609,10 @@ header {
 .ca-wrap__con__item__ttl {
   text-align: center;
   line-height: 3;
+}
+
+.ca-wrap__con__item__ttl h3 {
+  font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
 }
 
 
@@ -1012,8 +1027,8 @@ header {
     margin-top: 50px;
     height: clamp(36.25rem, 13.036rem + 116.07vw, 68.75rem);
     position: relative;
-
   }
+
 
   .ser-wrap__con__item01,
   .ser-wrap__con__item02 {
@@ -1154,6 +1169,14 @@ header {
     padding-bottom: 80px;
     position: static;
   } 
+
+  .ser-wrap__con {
+    width: 100%;
+    flex-flow: column;
+    margin-top: 50px;
+    height: clamp(36.25rem, 8.75rem + 137.5vw, 50rem);
+    position: relative;
+  }
 
   .ser-wrap__btn {
     margin-top: 50px;

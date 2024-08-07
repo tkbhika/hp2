@@ -143,5 +143,15 @@
     width: 90%;
   }
 
+  .pro-wrap__con__line, .pro-wrap__con__line__wide, .acc-wrap__con__line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pro-wrap__con__line h4,
+  .pro-wrap__con__line__wide h4,
+  .acc-wrap__con__line h4 {
+    margin-bottom: 0.5rem;
+  }
 
 }
